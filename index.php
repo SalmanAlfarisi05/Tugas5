@@ -22,7 +22,7 @@ if(isset($_POST['simpan'])){
     $Stiker        = $_POST['Stiker'];
 
     if($Nama && $Alamat && $NoTelepon && $Stiker){
-        $sql1   = "insert into mahasiswa(Nama,Alamat,NoTelepon,Stiker) value ('$Nama','$Alamat','$NoTelepon','$Stiker')";
+        $sql1   = "insert into stiker(Nama,Alamat,NoTelepon,Stiker) value ('$Nama','$Alamat','$NoTelepon','$Stiker')";
         $q1     = mysqli_query($koneksi,$sql1);
         if($q1){
             $success     ="Berhasil memasukkan data baru";
@@ -40,7 +40,7 @@ if(isset($_POST['simpan'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Mahasiswa</title>
+    <title>Data Stiker</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         .mx-auto { width:800px }
